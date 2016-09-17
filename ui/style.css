@@ -1,22 +1,83 @@
 body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+	margin: 0px;
+	padding: 0px;
 }
 
-.center {
-    text-align: center;
+#a {
+	max-height: 80px;
+	background-color:#6699ff;
+	text-align: center;
+	border-bottom: 5px solid blue;
 }
 
-.text-big {
-    font-size: 300%;
+#large {
+	text-align: center;
 }
 
-.bold {
-    font-weight: bold;
+#large img {
+	max-height:800px;
 }
 
-.img-medium {
-    height: 200px;
+#back {
+	text-align: center;
+	font-size: 20px;
 }
 
+a {
+	color: black;
+	text-decoration: none;
+}
+
+#a p {
+	 padding-top: 10px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	margin:0px;
+	color: black;
+	font-weight: bold;
+	font-size: 50px; 
+}
+
+#photo {
+	margin-left: 5%;
+	margin-top: 7.5%;
+	max-width: 45%;
+	float: left;
+}
+
+#photo img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#content {
+	float: right;
+	text-align: center;
+	width: 50%;
+	border-lef: 5px solid blue;	
+}
+
+#content p {
+	font-weight: bold;
+	font-size: 50px; 
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#top {
+	margin-top: 20%;
+}
+
+#bottom {
+	width: 100%;
+	display: block;
+	bottom: 0;
+	float: left;
+	position: fixed;
+	background-color: grey;
+}
+
+#bottom p {
+	font-size: 10px;
+	text-align: center;
+	padding: 0;
+	
+}
