@@ -21,6 +21,10 @@ app.get('/ui/ravi-min.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ravi-min.png'));
 });
 
+app.get('/ui/ravilarge.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'ravilarge.png'));
+});
+
 app.get('/ui/fb.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'fb.jpg'));
 });
