@@ -62,6 +62,12 @@ a {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+#pcontent p{
+    font-weight: bold;
+	font-size: 20px; 
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
 #top {
 	margin-top: 10%;
 }
