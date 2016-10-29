@@ -76,6 +76,10 @@ a {
 }
 
 #blog {
+    color:yellow;
+}
+
+#profile {
     color:red;
 }
 #top {
