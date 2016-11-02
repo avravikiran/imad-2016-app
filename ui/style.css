@@ -62,6 +62,11 @@ a {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+#content p img {
+    width:10%;
+    padding:10%;
+}
+
 #pcontent {
 	float: right;
 	text-align: center;
