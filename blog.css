@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: grey;
+}
+
+#header {
+	width: 100%;
+	max-height: 10%;
+	text-align: center;
+}
+
+#header p {
+	padding-top: 10px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	margin:0px;
+	color: black;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#header span {
+	margin: 0;
+	padding: 0;
+}
+
+#header2 {
+	display: block;
+}
+
+#me {
+	left: 0;
+	color: white;
+}
+
+#signup {
+	right: 0;
+}
+
+#login {
+	right: 0;
+}
+
+#bottom {
+	width: 100%;
+	display: block;
+	bottom: 0;
+	float: left;
+	position: absolute;
+	background-color: grey;
+}
+
+#bottom p {
+	font-size: 10px;
+	text-align: center;
+	padding: 0;
+	
+}
+
+
+#ttt {
+	width: 25%;
+	height: auto;
+	margin: 2%;
+	float: right;
+}
