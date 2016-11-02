@@ -36,6 +36,7 @@ app.get('/ui/gmail.jpg', function (req, res) {
 app.get('/ui/github.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'github.png'));
 });
+
 app.get('/ui/linkedin.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'linkedin.png'));
 });
