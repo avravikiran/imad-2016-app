@@ -1,22 +1,44 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: grey;
+	background-color: 
 }
+
+
 
 #header {
 	width: 100%;
 	max-height: 10%;
 	text-align: center;
+	display: inline-block;
 }
 
-#header p {
-	padding-top: 10px;
+#kiran {
+	
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	margin:0px;
 	color: black;
 	font-weight: bold;
 	font-size: 2em;
+	width: 80%;
+	float: left;
+}
+
+.button {
+	background-color: #0066ff;
+	border:none;
+	padding: 2% 5% 2% 5%;
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+#signin {
+	
+	width: 20%;
+	float: right;
+	padding-top: 1%;
 }
 
 #header span {
@@ -30,7 +52,7 @@ body {
 
 #me {
 	left: 0;
-	color: white;
+	
 }
 
 #signup {
@@ -58,9 +80,83 @@ body {
 }
 
 
-#ttt {
-	width: 25%;
-	height: auto;
+#twitter {
+	max-width: 25%;
+	height: 100%;
 	margin: 2%;
 	float: right;
+}
+
+#content {
+	width: 75%
+
+	
+}
+
+#article {
+	max-width: 80%;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#a_head {
+	background-color: #4CAF50;
+	font-size: 3em;
+	color: white;
+	padding: 2%;
+	
+
+}
+
+#content p {
+	margin: 0;
+}
+
+#a_body {
+	padding: 5%;
+	margin-left: 2%;
+	height: auto;
+
+}
+
+#c_head {
+	color: orange;
+	padding-left: 10%;
+
+}
+
+#c_body {
+	padding-left: 15%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-right: 5%;
+	background-color: grey
+}
+
+#comm {
+	color:blue;
+	padding-left: 5%;
+}
+
+#input {
+	padding-left: 15%;
+}
+
+#input textarea {
+	width: 80%;
+	height: auto;
+}
+
+#c_button {
+	float: right;
+	padding: 1%;
+	width: 25%;
+}
+
+hr {
+	width: 80%;
 }
