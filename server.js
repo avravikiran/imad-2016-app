@@ -26,14 +26,14 @@ app.get('/ui/style.css', function (req, res) {
 
 var pool = new Pool(config)
 
-app.get('/ui/a', function (req, res) {
+app.get('/ui/a', function (req) {
   pool.query('INSERT INTO "user" ("user_name", "email", "password") VALUES (\'a\', \'b\', \'c\');', function(err) {
      if(err)
      {
          res.status(500).send(err.toString());
      }
      else{
-          res.end("end");
+          res
      }
     });
 });
