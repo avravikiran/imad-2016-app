@@ -33,7 +33,7 @@ app.get('/ui/a', function (req, res) {
          res.status(500).send(err.toString());
      }
      else{
-          res.end("end");
+          
      }
     });
 });
