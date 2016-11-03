@@ -25,9 +25,9 @@ app.get('/ui/style.css', function (req, res) {
 
 var pool = new Pool(config)
 
-app.get('/ui/a', function (req, res) {
-  pool.query('SELECT * FROM user',function(err,result){
-      res.send(JSON,(stringify(result)));
+app.get('/ui/a', function (req, res) {''
+  pool.query("INSERT INTO user VALUES ('A','B','C',)",function(err,result){
+      res.end(done);
   });
 });
 app.get('/ui/madi.png', function (req, res) {
