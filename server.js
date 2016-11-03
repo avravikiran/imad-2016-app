@@ -31,7 +31,7 @@ app.get('/ui/style.css', function (req, res) {
 
 var pool = new Pool(config)
 
-app.get('/ui/a', function (req, res) {''
+app.get('/ui/a', function (req, res) {
   pool.query("INSERT INTO user VALUES ('A','B','C')",function(err){
       if (err) return onError(err);
       res.end('done');
