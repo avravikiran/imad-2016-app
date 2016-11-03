@@ -32,11 +32,9 @@ app.get('/ui/style.css', function (req, res) {
 var pool = new Pool(config)
 
 app.get('/ui/a', function (req, res) {
-  pool.query("INSERT INTO user VALUES ('A','B','C')",function(err){
-      if (err) return onError(err);
-      res.end('done');
+ res.send('jjj');
   });
-});
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
