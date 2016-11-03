@@ -9,7 +9,7 @@ var config = {
   host: 'db.imad.hasura-app.io',
   password: process.env.DB_PASSWORD,
   port: '5432',
-  database: 'avravikiran',
+  database: 'avravikiran'
 };
 
  var onError = function(err) {
