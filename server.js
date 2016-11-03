@@ -33,14 +33,10 @@ app.get('/ui/a', function (req, res) {
          res.status(500).send(err.toString());
      }
      else{
-          res.send(JSON.stringiyf(result));
+          res.send(JSON.stringify(result));
      }
-    
-   
-    
     });
-  
-  });
+});
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
