@@ -12,6 +12,12 @@ var config = {
   database: 'avravikiran',
 };
 
+ var onError = function(err) {
+    console.log(err.message, err.stack)
+    res.writeHead(500, {'content-type': 'text/plain'});
+    res.end('An error occurred');
+  };
+  
 var app = express();
 app.use(morgan('combined'));
 
@@ -26,7 +32,7 @@ app.get('/ui/style.css', function (req, res) {
 var pool = new Pool(config)
 
 app.get('/ui/a', function (req, res) {''
-  pool.query("INSERT INTO user VALUES ('A','B','C',)",function(err,result){
+  pool.query("INSERT INTO user VALUES ('A','B','C',)",function(err){
       res.end(done);
   });
 });
