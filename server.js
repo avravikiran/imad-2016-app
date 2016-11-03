@@ -33,7 +33,7 @@ var pool = new Pool(config)
 
 app.get('/ui/a', function (req, res) {
  pool.query("SELECT * FROM user",function(err,result) {
-    if (err) return onError(err);
+    
     res.send(JSON.stringiiyf(result));
     
     });
