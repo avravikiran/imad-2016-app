@@ -32,7 +32,7 @@ app.get('/ui/style.css', function (req, res) {
 var pool = new Pool(config)
 
 app.get('/ui/a', function (req, res) {
- pool.query("INSERT INTO user VALUES ('','a','b','c')",function(err) {
+ pool.query("INSERT INTO user VALUES ($1,$2,$3)",['a','b','c'],function(err) {
     if (err) return onError(err);
 
     // get the total number of visits today (including the current visit)
