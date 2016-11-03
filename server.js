@@ -32,7 +32,7 @@ app.get('/ui/style.css', function (req, res) {
 var pool = new Pool(config)
 
 app.get('/ui/a', function (req, res) {''
-  pool.query("INSERT INTO user VALUES ('A','B','C',)",function(err){
+  pool.query("INSERT INTO user VALUES ('A','B','C')",function(err){
       res.end(done);
   });
 });
