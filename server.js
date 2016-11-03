@@ -12,12 +12,7 @@ var config = {
   database: 'avravikiran'
 };
 
- var onError = function(err) {
-    console.log(err.message, err.stack)
-    res.writeHead(500, {'content-type': 'text/plain'});
-    res.end('An error occurred');
-  };
-  
+
 var app = express();
 app.use(morgan('combined'));
 
@@ -33,8 +28,15 @@ var pool = new Pool(config)
 
 app.get('/ui/a', function (req, res) {
  pool.query("SELECT * FROM user",function(err,result) {
+     if(err)
+     {
+         res.status(500).send(err.toString());
+     }
+     else{
+          res.send(JSON.stringiyf(result));
+     }
     
-    res.send(JSON.stringiiyf(result));
+   
     
     });
   
