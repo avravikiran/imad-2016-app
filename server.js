@@ -33,7 +33,8 @@ var pool = new Pool(config)
 
 app.get('/ui/a', function (req, res) {''
   pool.query("INSERT INTO user VALUES ('A','B','C')",function(err){
-      res.end(done);
+      if (err) return onError(err);
+      res.end('done');
   });
 });
 app.get('/ui/madi.png', function (req, res) {
