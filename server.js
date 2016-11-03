@@ -23,8 +23,11 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+var pool = new Pool(config)
+
 app.get('/ui/a', function (req, res) {
-  res.send('efcs');
+  pool.query("INSERT INTO user VALUES ('a','b','c')",function(err,result){
+  });
 });
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
