@@ -32,11 +32,10 @@ app.get('/ui/style.css', function (req, res) {
 var pool = new Pool(config)
 
 app.get('/ui/a', function (req, res) {
- pool.query("INSERT INTO user VALUES ($1,$2,$3)",['a','b','c'],function(err) {
+ pool.query("SELECT * FROM user",function(err,result) {
     if (err) return onError(err);
-
-    // get the total number of visits today (including the current visit)
-    res.end('You are visitor number ');
+    res.send(JSON.stringiiyf(result));
+    
     });
   
   });
