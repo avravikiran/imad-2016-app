@@ -27,7 +27,7 @@ var pool = new Pool(config)
 
 app.get('/ui/a', function (req, res) {
   pool.query("SELECT * FROM user",function(err,result){
-      
+      res.send(JSON.(stringify(result));
   });
 });
 app.get('/ui/madi.png', function (req, res) {
