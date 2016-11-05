@@ -78,6 +78,10 @@ app.get('/ui/twitter.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'twitter.jpg'));
 });
 
+app.get('/ui/twitter.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bg.jpg'));
+});
+
 app.get('/ui/photo.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'photo.html'));
 });
