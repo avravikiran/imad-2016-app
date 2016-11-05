@@ -1,10 +1,16 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: 
 }
 
-
+#bg {
+	min-height: 80%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
 #header {
 	width: 100%;
@@ -15,30 +21,47 @@ body {
 
 #kiran {
 	
-	font-family: "Comic Sans MS", cursive, sans-serif;
 	margin:0px;
-	color: black;
+	color: white;
 	font-weight: bold;
 	font-size: 2em;
 	width: 80%;
 	float: left;
+	padding-top: 1%;
 }
 
 .button {
-	background-color: #0066ff;
+	background-color: #3a3438;
 	border:none;
 	padding: 2% 5% 2% 5%;
 	color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-right: 10%;
+}
 
+.cbutton  {
+	background-color: #3a3438;
+	border:none;
+	padding: 2% 5% 2% 5%;
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	margin-right: 10%;
+}
 
+.button:hover {
+	box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.4), 0 8px 40px 0 rgba(255, 255, 255, 0.38);
+}
+
+.cbutton:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 8px 40px 0 rgba(0, 0, 0, 0.38);
 }
 
 #signin {
 	
 	width: 20%;
-	float: right;
-	padding-top: 1%;
+    float: right;
+    padding-top: 1.5%;
+    margin: 0;
 }
 
 #header span {
@@ -81,10 +104,9 @@ body {
 
 
 #twitter {
-	max-width: 25%;
-	height: 100%;
-	margin: 2%;
-	float: right;
+	width: 25%;
+    float: right;
+    padding-right: 4%;
 }
 
 #content {
@@ -95,19 +117,19 @@ body {
 
 #article {
 	max-width: 80%;
-	
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 5%;
-	margin-bottom: 3%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0px 8px 48px 48px rgba(0, 0, 0, 0.2);
+	background-color: rgba(255,255,255,0);
+	margin-bottom: 10%;
+	
 }
 
 #a_head {
-	background-color: #4CAF50;
 	font-size: 3em;
-	color: white;
-	padding: 2%;
+    color: rgb(255,255, 255);
+    padding: 2%;
+    padding-left: 3%;
 	
 
 }
@@ -116,45 +138,65 @@ body {
 	margin: 0;
 }
 
+#body {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
 #a_body {
 	padding: 5%;
-	margin-left: 2%;
-	height: auto;
+    height: auto;
+    color: white;
+    padding-left: 6%;
+    line-height: 1.4;
+    font-size: 1.1em;
+    padding-top: 2%;
+    padding-bottom: 3%;
 
 }
 
 #c_head {
-	color: orange;
-	padding-left: 10%;
+	color: white;
+    padding-left: 10%;
+    font-weight: bold;
+    font-size: 1.2em
 
 }
 
 #c_body {
 	padding-left: 15%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-right: 5%;
-	background-color: grey
+    padding-top: 1%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    font-size: 1.2em;
+    color: #232027
+    font-weight:bold;
 }
 
 #comm {
-	color:blue;
+	color:white;
+	font-weight: bold;
+	font-size: 1.3em;
 	padding-left: 5%;
 }
 
 #input {
+	
 	padding-left: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 #input textarea {
 	width: 80%;
-	height: auto;
+	
 }
 
 #c_button {
 	float: right;
 	padding: 1%;
-	width: 25%;
+	width: 30%;
+	padding-top: 0;
 }
 
 hr {
