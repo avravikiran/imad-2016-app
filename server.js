@@ -78,7 +78,7 @@ app.get('/ui/twitter.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'twitter.jpg'));
 });
 
-app.get('/ui/twitter.jpg', function (req, res) {
+app.get('/ui/bg.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bg.jpg'));
 });
 
