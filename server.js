@@ -24,17 +24,20 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-var pool = new Pool(config)
+var pool = new Pool(config);
 
 app.get('/ui/a', function (req, res) {
-  pool.query('INSERT INTO "user" ("user_name", "email", "password") VALUES (\'a\', \'b\', \'c\');', function(err) {
-     if(err)
-     {
-         res.status(500).send(err.toString());
-     }
-     else{
-          res.end("end");
-     }
+    pool.query("INSERT INTO user (\"user_name\", \"email\",\"password\") VALUES ('a','b','c')", function(err) {
+        if(err)
+        {
+            res.end('An error occurred');
+        }
+        else
+        {
+            res.writeHead(200, {'content-type': 'text/plain'});
+        }
+
+
     });
 });
 
