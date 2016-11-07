@@ -14,7 +14,7 @@ var config = {
 
 function myFunction() {
     document.getElementById("comment").innerHTML = "Hello World";
-};
+}
 
 
 
