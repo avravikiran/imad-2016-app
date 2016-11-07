@@ -4,7 +4,7 @@
 console.log('Loaded!');
 
 function myFunction() {
-    document.getElementById("comment").write = "Hello World";
+    document.getElementById("comment").innerHTML = "Hello World";
 }
 
 
