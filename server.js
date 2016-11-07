@@ -12,9 +12,6 @@ var config = {
   database: 'avravikiran'
 };
 
-function myFunction() {
-    document.getElementById("comment").innerHTML = "Hello World";
-}
 
 
 
