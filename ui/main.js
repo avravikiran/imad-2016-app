@@ -15,21 +15,7 @@ document.getElementById("profile").onclick=function(){viewProfile()};
 var pool = new Pool(config);
 
     
-app.get('/ui/a', function (req, res) {
-    pool.query("INSERT INTO \"user\" (\"user_name\", \"email\",\"password\") VALUES ('a','b','c')", function(err) {
-        if(err)
-        {
-            res.end('An error occurred');
-        }
-        else
-        {
-            res.writeHead(200, {'content-type': 'text/plain'});
-        }
 
-
-    });
-});
-
-function myFunction() {
+document.getElementById("c_buttion").onclick = function myFunction() {
     document.getElementById("article").innerHTML = "Hello World";
 }
