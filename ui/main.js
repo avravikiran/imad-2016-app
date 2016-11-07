@@ -10,12 +10,8 @@ var config = {
 
 
 console.log('Loaded!');
-document.getElementById("profile").onclick=function(){viewProfile()};
+
 
 var pool = new Pool(config);
 
     
-
-document.getElementById("c_buttion").onclick = function myFunction() {
-    document.getElementById("article").innerHTML = "Hello World";
-};
