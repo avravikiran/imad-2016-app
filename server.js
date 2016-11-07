@@ -35,7 +35,7 @@ var pool = new Pool(config);
 console.log(pool)
 
 app.get('/ui/a', function (req, res) {
-    pool.query("INSERT INTO \"user\" (\"user_name\", \"email\",\"password\") VALUES ('a','b','c')", function(err) {
+    pool.query("INSERT INTO comments VALUE ('AAAAAAAAAAAAAAAAAAAAAA')", function(err) {
         if(err)
         {
             res.end('An error occurred');
