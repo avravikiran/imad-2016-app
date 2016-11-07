@@ -11,6 +11,10 @@ var config = {
 
 console.log('Loaded!');
 
+function myFunction() {
+    document.getElementById("comment").write = "Hello World";
+}
+
 
 var pool = new Pool(config);
 
