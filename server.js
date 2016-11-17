@@ -81,6 +81,8 @@ app.get('/ui/linkedin.png', function (req, res) {
 
 app.get('/ui/blog.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog.html'));
+  res.sendFile('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
+  
 });
 
 app.get('/ui/blog.css', function (req, res) {
