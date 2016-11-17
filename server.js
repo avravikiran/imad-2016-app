@@ -36,7 +36,8 @@ app.get('/abc', function (req, res) {
         if (err) {
             res.status(500).send(err.tostring());
         } else {
-            res.send(JSON.stringify(create(result.rows[10
+            res.send(JSON.stringify(create(result.rows[1])));
+        }
     });
 });
 
