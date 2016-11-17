@@ -34,20 +34,7 @@ app.get('/ui/main.js', function (req, res) {
 var pool = new Pool(config);
 console.log(pool);
 
-app.get('/ui/a', function (req, res) {
-    pool.query("INSERT INTO \"comments\" (\"comment\") VALUE ('AAAAAAAAAAAAAAAAAAAAAA')", function(err) {
-        if(err)
-        {
-            res.end('An error occurred');
-        }
-        else
-        {
-            res.writeHead(200, {'content-type': 'text/plain'});
-        }
 
-
-    });
-});
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
