@@ -12,9 +12,6 @@ var config = {
   database: 'avravikiran'
 };
 
-
-
-
 var app = express();
 app.use(morgan('combined'));
 
