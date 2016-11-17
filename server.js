@@ -22,6 +22,24 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var pool = new Pool(config);
+
+app.get('/abc', function (req, res) {
+    
+    pool,query('SELECT * FROM comments',function(err,result) {
+        if (err) {
+            res.status(500).send(err.tostring());
+        } else {
+            res.send(JSON.stringify(result))
+        }
+    });
+});
+
+
+
+
+
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -30,9 +48,6 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
-var pool = new Pool(config);
-console.log(pool);
 
 
 
