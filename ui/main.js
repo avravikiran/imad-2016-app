@@ -5,7 +5,7 @@ console.log('Loaded!');
 var config = {
   user: 'avravikiran',
   host: 'db.imad.hasura-app.io',
-  password: process.env.DB_PASSWORD,
+  password: db-avravikiran-58948,
   port: '5432',
   database: 'avravikiran'
 };
