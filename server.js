@@ -22,6 +22,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var create = function (text) {
+
+    return ('<p style="color:red;">'+text + '</p');
+};
+
+
 var pool = new Pool(config);
 
 app.get('/abc', function (req, res) {
@@ -30,11 +36,10 @@ app.get('/abc', function (req, res) {
         if (err) {
             res.status(500).send(err.tostring());
         } else {
-            res.send(JSON.stringify(result.rows));
+            res.send(create(result.rows[0]));
         }
     });
 });
-
 
 
 
