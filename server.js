@@ -30,7 +30,7 @@ app.get('/abc', function (req, res) {
         if (err) {
             res.status(500).send(err.tostring());
         } else {
-            res.send(JSON.stringify(result.rows.lenght));
+            res.send(JSON.stringify(result.rows));
         }
     });
 });
