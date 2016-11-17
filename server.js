@@ -26,7 +26,7 @@ var pool = new Pool(config);
 
 app.get('/abc', function (req, res) {
     
-    pool,query('SELECT * FROM comments',function(err,result) {
+    pool.query('SELECT * FROM comments',function(err,result) {
         if (err) {
             res.status(500).send(err.tostring());
         } else {
