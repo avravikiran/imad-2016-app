@@ -32,11 +32,11 @@ var pool = new Pool(config);
 
 app.get('/abc', function (req, res) {
     
-    pool.query('SELECT comment FROM comments WHERE id=$1',[2],function(err,result) {
+    pool.query('SELECT comment FROM comments WHERE id=$1',[1],function(err,result) {
         if (err) {
             res.status(500).send(err.tostring());
         } else {
-            res.send(JSON.stringify(result));
+            res.send(JSON.stringify(result.rows));
         }
     });
 });
