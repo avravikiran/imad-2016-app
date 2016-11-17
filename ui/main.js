@@ -1,4 +1,7 @@
-
+var express = require('express');
+var morgan = require('morgan');
+var Pool = require('pg').Pool;
+var path = require('path');
 
 console.log('Loaded!');
 
