@@ -109,6 +109,7 @@ body {
 #twitter {
 	width: 25%;
     float: right;
+    margin-bottom:0%;
 
 }
 
@@ -139,7 +140,7 @@ body {
 
 #content p {
 	margin: 0;
-	margin-bottom:10%;
+	
 }
 
 #body {
